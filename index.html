@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Stock Market Dashboard</title>
+</head>
+<body>
+    <div class="Main">
+        <div class="header">
+            <i class="fa-solid fa-arrow-up fa-xl up-arrow"></i>
+             <h2> STOCK MARKET DASHBOARD</h2>
+             <i class="fa-solid fa-arrow-down fa-xl down-arrow" ></i>
+        </div>
+        <br>
+        <div class="card" >
+            <div class="d-flex">
+                 <input id="input" placeholder="Search for Symbol..."  class="input" type="text">
+                 <button class="btn"> <i class="fa-solid fa-search fa-lg search"></i></button>
+            </div>
+            <br>
+            <div class="d-flex">
+                <button id="TIME_SERIES_INTRADAY" class="btn-option" onClick="WatchList( this.id )">INTRADAY</button>
+                <button id="TIME_SERIES_DAILY" class="btn-option "  onClick="WatchList( this.id )">DAILY</button>
+            </div>
+            <br>
+            <div class="d-flex">
+                <button id="TIME_SERIES_WEEKLY" class="btn-option"  onClick="WatchList( this.id )">WEEKLY</button>
+                <button id ="TIME_SERIES_MONTHLY" class="btn-option"  onClick="WatchList( this.id )">MONTHLY</button>
+            </div>
+        </div>
+        <br>
+        <div class="card" id="addToWatchList">
+            <div class="watch-header" >
+                 <h2> YOUR WATCHLIST </h2>  
+            </div>
+            <br>
+        </div>
+    </div>
+</body>
+</html>
